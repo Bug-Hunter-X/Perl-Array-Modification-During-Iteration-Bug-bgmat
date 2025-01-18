@@ -1,0 +1,1 @@
+my @array = (1..10); # Solution 1: Using foreach loop my @newArray; foreach my $element (@array) { if ($element != 5) { push @newArray, $element; } } print join(',', @newArray); # Solution 2: Using grep my @newArray = grep { $_ != 5 } @array; print join(',', @newArray); 
